@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="container">
+      <div class="row"> 
+        <div class="offer">
+          <a id="mobile-click">
+            <img src="../img/device.svg">
+            <h2>Mobile</h2>
+            <p class="description">Get notifications about new releases in our mobile app.</p>
+            <div class="price"><sup>$</sup><p class="big">10</p><p class="per">/ month</p></div>
+          </a>   
+        </div>
+
+        <div class="offer">
+          <a id="desktop-click">
+            <img src="../img/laptop.svg">
+            <h2>Desktop</h2>
+            <p class="description">Enjoy new episodes on your laptop in browser with our web service, which supports all the platforms.</p>
+            <div class="price"><sup>$</sup><p class="big">15</p><p class="per">/ month</p></div>
+          </a>    
+        </div>
+       
+        <div class="offer">
+          <a id="tv-click">
+            <img src="../img/monitor.svg">
+            <h2>TV</h2>
+            <p class="description">Watch your favorite series at home on large screen with our TV application.</p>
+            <div class="price"><sup>$</sup><p class="big">20</p><p class="per">/ month</p></div>    
+          </a>
+        </div>
+      </div>
+
+      <button>Give Feedback</button>
+
+  </div>
+
+  <div id="overlay"></div>
+
+  <div id="mobile" class="pop-up" style="">
+      <button class="close"><img src="../img/cross.svg"></button> 
+
+      <b>Confirmation</b>
+
+      <img src="../img/device.svg">
+      <h2>Mobile</h2>
+      <p class="description">Get notifications about new releases in our mobile app.</p>
+      <div class="price"><sup>$</sup><p class="big">10</p><p class="per">/ month</p></div>
+
+      <button class="confirm-button">Confirm and pay</button>
+  </div>   
+
+  <div id="desktop" class="pop-up" style="">
+      <button class="close"><img src="../img/cross.svg"></button> 
+
+      <b>Confirmation</b>
+
+      <img src="../img/laptop.svg">
+      <h2>Desktop</h2>
+      <p class="description">Enjoy new episodes on your laptop in browser with our web service, which supports all the platforms.</p>
+      <div class="price"><sup>$</sup><p class="big">15</p><p class="per">/ month</p></div>
+
+      <button class="confirm-button">Confirm and pay</button>
+  </div>
+
+  <div id="tv" class="pop-up" style="">
+      <button class="close"><img src="../img/cross.svg"></button> 
+
+      <b>Confirmation</b>
+
+      <img src="../img/monitor.svg">
+      <h2>TV</h2>
+      <p class="description">Watch your favorite series at home on large screen with our TV application.</p>
+      <div class="price"><sup>$</sup><p class="big">20</p><p class="per">/ month</p></div>   
+
+      <button class="confirm-button">Confirm and pay</button>
+  </div> 
+
+
+
+
+</div>
+
+</body>
+</html>

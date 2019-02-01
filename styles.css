@@ -1,0 +1,233 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 14px;
+	color: #222;
+	outline: none;
+}
+
+body {
+	background: #85a5d4;
+	margin: 0;
+}
+
+b {
+	display: block;
+	padding-bottom: 2.0em;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+	position: relative;
+	background: #fff;
+	width: 900px;
+	height: 420px;
+	margin-left: auto;
+	margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+.container .row {
+	display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+.container .row .offer {
+	width: 300px;
+	height: 280px;
+	margin: 1em 1em;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container .row .offer:hover {
+	background: #f8f8f8;
+}
+
+.container .row .offer a {
+	display: block;
+	height: 100%;
+}
+
+.container .row .offer a, .container .row .offer a:hover  {
+	text-decoration: none;
+}
+
+.container .row .offer img, .pop-up img {
+	width: 65px;
+	height: 65px;
+	margin: 0.5em 0 1.5em;
+}
+
+.container .row .offer h2, .pop-up h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #4c69d3;
+}
+
+.container .row .offer .description, .pop-up .description {
+	color: #aba7a7;
+    line-height: 1.5em;
+    padding: 0 1.25em;
+}
+
+.container .row .offer .price, .pop-up .price {
+	color: #4c69d3;
+	display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container .row .offer .price sup, .pop-up sup {
+    padding-top: 5px;
+}
+
+.container .row .offer .price .big, .pop-up .price .big {
+	font-size: 2.0em;
+	font-weight: 700;
+	margin: 0;
+}
+
+.container .row .offer .price .per, .pop-up .price .per {
+    margin-left: 0.3em;
+}
+
+.container button, .pop-up button {
+	display: flex;
+    background: #4c69d3;
+    color: #fff;
+    padding: 1em 3em;
+    margin: 0 auto;
+    border-radius: 2px;
+    border: none;
+  	cursor: pointer;
+}
+
+.pop-up {
+	position: absolute;
+	background: #fff;
+	width: 410px;
+	height: 390px;
+	padding: 1.0em;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.pop-up .close {
+	position: absolute;
+	background: none;
+	top: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.pop-up .close img {
+	width: 30px;
+	height: 30px;
+	padding: 0.5em;
+	margin: 0;
+}
+
+.pop-up .confirm-button {
+	margin-top: 0.5em;
+}
+
+#overlay {
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.pop-up {
+	position: fixed;
+	transform: translate(-50%,-50%);
+   	left: 50%;
+   	right: 50%;
+   	top: 47%;
+}
+
+#mobile, #desktop, #tv {
+	display: none;
+}
+
+@media (max-width:920px) {
+	.wrapper {
+		height: 100%;
+	}
+
+	.container {
+		width: 320px;
+		height: 1040px;
+		margin: 2em 0;
+	}
+
+	.container .row {
+		flex-wrap: wrap;
+	}
+
+	.container .row .offer {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 450px) {
+	.pop-up {
+		width: 300px;
+		height: 400px;
+	}
+}
+
+@media (max-height: 320px) {
+	.pop-up {
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+		margin: 10px auto;
+	}
+
+	b {
+		padding: 0 0 1.0em;
+	}
+
+	.pop-up img {
+		margin: 0;
+	}
+
+}
+
+@media (max-width: 320px) {
+	html  {
+		min-width: 320px;
+	}
+
+	.container {
+		width: 300px;
+	}
+}
